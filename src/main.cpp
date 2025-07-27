@@ -1,5 +1,9 @@
-#include <iostream>
+#include "../include/web-scraper.h"
+#include <string>
 
 int main() {
-    std::cout << "hello world" << std::endl;
+    WebScraper scraper;
+    std::string html = scraper.scrapeInfo("https://some-site.com");
+
+    std::cout << html << std::endl;
 }
